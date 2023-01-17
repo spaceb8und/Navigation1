@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="202dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="23dp"
+        android:text="История"
+        app:layout_constraintBottom_toTopOf="@+id/payments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/payments"
+        android:layout_width="198dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="20dp"
+        android:text="Операции по счету"
+        app:layout_constraintBottom_toTopOf="@+id/balance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history" />
+
+    <Button
+        android:id="@+id/balance"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="317dp"
+        android:text="Баланс счета"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payments" />
+</androidx.constraintlayout.widget.ConstraintLayout>

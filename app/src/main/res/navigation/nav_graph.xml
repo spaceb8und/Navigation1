@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navigation.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_historyFragment3"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_paymentsFragment"
+            app:destination="@id/paymentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.navigation.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.example.navigation.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" >
+        <action
+            android:id="@+id/action_balanceFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentsFragment"
+        android:name="com.example.navigation.PaymentsFragment"
+        android:label="fragment_payments"
+        tools:layout="@layout/fragment_payments" >
+        <action
+            android:id="@+id/action_paymentsFragment_to_transferFragment"
+            app:destination="@id/transferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferFragment"
+        android:name="com.example.navigation.TransferFragment"
+        android:label="fragment_transfer"
+        tools:layout="@layout/fragment_transfer" >
+        <action
+            android:id="@+id/action_transferFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.example.navigation.ConfirmFragment"
+        android:label="fragment_confirm"
+        tools:layout="@layout/fragment_confirm" >
+        <action
+            android:id="@+id/action_confirmFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
